@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9ADA8F7A2A5175A40097A5D6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADA8F792A5175A40097A5D6 /* main.swift */; };
+		9ADA8F812A5175B50097A5D6 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADA8F802A5175B50097A5D6 /* UserManager.swift */; };
+		9ADA8F832A5175C20097A5D6 /* UserAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADA8F822A5175C20097A5D6 /* UserAuthenticator.swift */; };
+		9ADA8F852A5175CA0097A5D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADA8F842A5175CA0097A5D6 /* User.swift */; };
+		9ADA8F872A5175D30097A5D6 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADA8F862A5175D30097A5D6 /* AuthenticationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		9ADA8F762A5175A40097A5D6 /* 5homework6m */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 5homework6m; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADA8F792A5175A40097A5D6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9ADA8F802A5175B50097A5D6 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		9ADA8F822A5175C20097A5D6 /* UserAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticator.swift; sourceTree = "<group>"; };
+		9ADA8F842A5175CA0097A5D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9ADA8F862A5175D30097A5D6 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				9ADA8F792A5175A40097A5D6 /* main.swift */,
+				9ADA8F802A5175B50097A5D6 /* UserManager.swift */,
+				9ADA8F822A5175C20097A5D6 /* UserAuthenticator.swift */,
+				9ADA8F842A5175CA0097A5D6 /* User.swift */,
+				9ADA8F862A5175D30097A5D6 /* AuthenticationService.swift */,
 			);
 			path = 5homework6m;
 			sourceTree = "<group>";
@@ -120,7 +132,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADA8F852A5175CA0097A5D6 /* User.swift in Sources */,
+				9ADA8F832A5175C20097A5D6 /* UserAuthenticator.swift in Sources */,
+				9ADA8F812A5175B50097A5D6 /* UserManager.swift in Sources */,
 				9ADA8F7A2A5175A40097A5D6 /* main.swift in Sources */,
+				9ADA8F872A5175D30097A5D6 /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
