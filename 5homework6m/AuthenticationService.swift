@@ -7,8 +7,6 @@
 
 import Foundation
 
-//AuthenticationService (Сервис аутентификации): Класс, отвечающий за аутентификацию пользователей, такие как регистрация и проверка подлинности.
-
 protocol AuthenticationServiceProtocol {
     func registerUser(_ user: User)
     func authenticateUser(username: String, password: String) -> Bool

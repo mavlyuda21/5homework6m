@@ -7,23 +7,19 @@
 
 import Foundation
 
+let userRepository = UserRepository()
+let userPrinter = UserPrinter(userRepository: userRepository)
 let authenticationService = AuthenticationService()
-let userManager = UserManager()
-let userAuthenticator = UserAuthenticator(authenticationService: authenticationService, userManager: userManager)
+let userAuthenticator = UserAuthenticator(authenticationService: authenticationService, userPrinter: userPrinter)
 
-// Создание пользователей
 let user1 = User(username: "user1", password: "password1")
 let user2 = User(username: "user2", password: "password2")
 
-// Регистрация пользователей
+userRepository.addUser(user1)
+userRepository.addUser(user2)
 authenticationService.registerUser(user1)
 authenticationService.registerUser(user2)
 
-// Добавление пользователей в UserManager
-userManager.addUser(user1)
-userManager.addUser(user2)
-
-// Аутентификация пользователя
 let username = "user1"
 let password = "password1"
 let isAuthenticated = userAuthenticator.authenticate(username: username, password: password)
@@ -35,5 +31,3 @@ if isAuthenticated {
 } else {
     print("Аутентификация не удалась для пользователя: \(username)")
 }
-
-

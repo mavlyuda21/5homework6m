@@ -7,15 +7,9 @@
 
 import Foundation
 
-//User (Пользователь): Класс, представляющий пользователя, содержащий свойства, такие как имя пользователя и пароль.
-
-class User {
+struct User {
     var username: String
     var password: String
-    
-    init(username: String, password: String) {
-        self.username = username
-        self.password = password
-    }
 }
+
 

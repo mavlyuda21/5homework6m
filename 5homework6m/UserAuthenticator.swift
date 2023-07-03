@@ -7,8 +7,6 @@
 
 import Foundation
 
-//UserAuthenticator (Аутентификатор пользователей): Класс, отвечающий за аутентификацию пользователей и вывод информации о них.
-
 protocol UserAuthenticatorProtocol {
     func authenticate(username: String, password: String) -> Bool
     func printUserDetails(username: String)
@@ -16,11 +14,11 @@ protocol UserAuthenticatorProtocol {
 
 class UserAuthenticator: UserAuthenticatorProtocol {
     private let authenticationService: AuthenticationServiceProtocol
-    private let userManager: UserManagerProtocol
+    private let userPrinter: UserPrinterProtocol
     
-    init(authenticationService: AuthenticationServiceProtocol, userManager: UserManagerProtocol) {
+    init(authenticationService: AuthenticationServiceProtocol, userPrinter: UserPrinterProtocol) {
         self.authenticationService = authenticationService
-        self.userManager = userManager
+        self.userPrinter = userPrinter
     }
     
     func authenticate(username: String, password: String) -> Bool {
@@ -28,10 +26,6 @@ class UserAuthenticator: UserAuthenticatorProtocol {
     }
     
     func printUserDetails(username: String) {
-        if let user = userManager.getUserByUsername(username) {
-            print("Имя пользователя: \(user.username)")
-            print("Пароль: \(user.password)")
-            print("---")
-        }
+        userPrinter.printUsers(username)
     }
 }
